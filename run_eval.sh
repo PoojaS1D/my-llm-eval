@@ -27,7 +27,7 @@ srun lm_eval \
     --model hf \
     --model_args pretrained=google/gemma-2b \
     --tasks $TASK_NAME \
-    --task_registry my_custom_task.py \
+    --include_path . \
     --device cuda:0 \
     --output_path results/${TASK_NAME}_results.json
 
